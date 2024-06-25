@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Color Game</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" type="text/css" href="colorGame.css">
+</head>
+<body>
+	<h1><span id="colorDisplay">RGB</span> <br> Color Game</h1>
+	<div id="strip">
+		<div class="tooltip"><i class="fas fa-question" id="help"></i>
+			<span class="tooltiptext">
+				<p>
+					Guess which square matches the RGB color code dispalyed on screen
+				</p>
+				<table id="container">
+				<tr >
+					<th class="tinySquare" id="red"></th>
+					<th class="rgb">RGB(255, 0, 0)</th>
+				</tr>
+				<tr >
+					<th class="tinySquare" id="orange"></th>
+					<th class="rgb">RGB(255, 127, 0)</th>
+				</tr>
+				<tr >
+					<th class="tinySquare" id="yellow"></th>
+					<th class="rgb">RGB(255, 255, 0)</th>
+				</tr>
+				<tr >
+					<th class="tinySquare" id="green"></th>
+					<th class="rgb">RGB(0, 255, 0)</th>
+				</tr>
+				<tr >
+					<th class="tinySquare" id="blue"></th>
+					<th class="rgb">RGB(0, 0, 255)</th>
+				</tr>
+				<tr >
+					<th class="tinySquare" id="indigo"></th>
+					<th class="rgb">RGB(46, 43, 95)</th>
+				</tr>
+				<tr >
+					<th class="tinySquare" id="violet"></th>
+					<th class="rgb">RGB(139, 0, 255)</th>
+				</tr>
+
+				</table>
+			</span>
+		</div>
+		<button id="reset">New Colors</button>
+		<button id="easyBtn">Easy</button>
+		<button id="hardBtn" class="selected">Hard</button>
+	</div>
+	<div id="status">
+		<h3 id="messageDisplay"></h3>
+	</div>
+	<div id="container">
+		<div class="square"></div>
+		<div class="square"></div>
+		<div class="square"></div>
+		<div class="square"></div>
+		<div class="square"></div>
+		<div class="square"></div>
+	</div>
+
+	<script type="text/javascript" src="color-game.js"></script>
+</body>
+</html>
